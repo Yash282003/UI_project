@@ -1,16 +1,18 @@
-.cards-wrapper{
-    height: 120vh;
-    padding: 10vh 8vw  ;
-    background: var(--Grey-white, #FFF);
-}
-.card-heading{
-    display: flex;
-    align-items: center;
-}
 
-.btn-no-bg {
-    background-color: transparent !important;
-    border-color: #8064A2 !important; /* You may adjust the border color */
-    color: #8064A2 !important; /* You may adjust the text color */
-  }
-  
+@media screen and (max-width:768px) {
+    .btn-no-bg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-title{
+        display: flex;
+        justify-content: center;
+    }
+    .card-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

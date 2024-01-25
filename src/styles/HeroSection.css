@@ -1,8 +1,7 @@
 .herosection{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 55px;
-    height: 120vh;
+    display: flex;
+   
+    min-height: 120vh;
     justify-content: space-between;
     /* margin: 0 2vw; */
     padding: 10vh 8vw  ;
@@ -10,10 +9,7 @@
 }
 .content-wrapper {
     flex: 1; 
-    background-image: url('../images/bg.png'); 
-    background-size: contain;
-    background-repeat: no-repeat; 
-    background-position: center; 
+    padding: 0 3vw;
     height: 95%;
     width: 55vw;
     
@@ -51,4 +47,65 @@ padding: 2vh 0;
     line-height: 30px; /* 214.286% */
     letter-spacing: 0.28px;
     /* width: 70vw; */
+  }
+
+
+  @media screen and (max-width:1250px) {
+    .herosection{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .details-wrapper{
+      /* min-height: 100vh;
+      background-image: url('../images/bg.png');  */
+      background-size: contain;
+      background-repeat: no-repeat; 
+      background-position: center; 
+    }
+  }
+  @media screen and (max-width:850px){
+    h2{
+      font-size: 25px;
+    }
+    .hobby{
+      font-size: 25px;
+    }
+    .passion{
+      font-size: 25px;
+    }
+  }
+  @media screen and (max-width:680px){
+    h2{
+      font-size: 20px;
+    }
+    .hobby{
+      font-size: 20px;
+    }
+    .passion{
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width:540px){
+    h2{
+      font-size: 18px;
+    }
+    .hobby{
+      font-size: 18px;
+    }
+    .passion{
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width:480px){
+    h2{
+      font-size: 16px;
+    }
+    .hobby{
+      font-size: 16px;
+    }
+    .passion{
+      font-size: 16px;
+    }
   }

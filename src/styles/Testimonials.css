@@ -23,8 +23,8 @@
 
     display: flex;
     flex-direction: column;
-    width: 1240px;
-    height: 284px;
+    width: 84vw;
+    min-height: 284px;
     padding: 30px;
     border-radius: 8px;
 border: 1px solid var(--Grey-Light, #CED4DA);
@@ -51,8 +51,8 @@ padding: 0 15px 0 15px;
   .testimonial-second-card{
     background: var(--Purple-3, #F7F5F9);
     padding: 30px;
-    width: 1240px;
-height: 472px;
+    width: 84vw;
+    min-height:60vh;
 
   }
   .testimonial-second-card-heading{
@@ -60,7 +60,7 @@ height: 472px;
   }
   #progress{
     -webkit-appearance: none;
-    width: 468px;
+    width: 100%;
     height: 2px;
     background: var(--Grey-white, #FFF);
   }
@@ -86,4 +86,24 @@ letter-spacing: 0.36px;
   .testimonial-footer-right{
     display: flex;
     align-items: center;
+  }
+
+  @media screen and (max-width:750px) {
+    .testimonial-footer{
+      flex-direction: column-reverse;
+
+    }
+    .testimonial-footer-left{
+      padding: 2px;
+    }
+    .testimonial-footer-right{
+      justify-content: center;
+      align-items: center;
+      column-gap: 15px;
+      padding: 30px 0;
+    }
+    #progress{
+      width: 50vw;
+      padding: 0 15px ;
+    }
   }

@@ -10,7 +10,7 @@ import bookmark from "../images/bookmark.png";
 import Explore from "../images/Explore.png";
 import Hobbies from "../images/Hobbies.png";
 import notification from "../images/notification.png";
-import shopping from "../images/shopping.png"
+import shopping from "../images/shopping.png";
 import { IoSearch } from "react-icons/io5";
 import "../styles/Navbar.css";
 function NavbarBootStrap() {
@@ -20,10 +20,18 @@ function NavbarBootStrap() {
         <Navbar.Brand href="#">
           <img src={HobbyCueLogo} alt="img" />
         </Navbar.Brand>
+        <div className="">
+          <IoSearch />
+        </div>
+        <div className="">
+          <img src={notification} />
+        </div>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
+
         <Navbar.Collapse id="navbarScroll">
           <div className="input-wrapper">
-            <input placeholder="Search here..." className="navbar-input"/>
+            <input placeholder="Search here..." className="navbar-input" />
 
             <div className="search-icon-wrapper">
               <IoSearch id="search-icon" />
@@ -50,15 +58,12 @@ function NavbarBootStrap() {
             </div>
             <div className="link-wrapper">
               <img src={bookmark} />
-              
             </div>
             <div className="link-wrapper">
               <img src={notification} />
-              
             </div>
             <div className="link-wrapper">
               <img src={shopping} />
-              
             </div>
             <Button variant="outline-success">Sign In</Button>
           </Nav>

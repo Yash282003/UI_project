@@ -15,17 +15,6 @@ function Footer() {
   return (
     <div className="footer-wrapper">
       <ScrollToTop smooth top="20" />
-      <div className="footer-wrapper-bg">
-        <div className="bg-image">
-          <h1 id="footer-bg-head">
-            Your <span className="hobby">Hobby</span>, Your{" "}
-            <span className="passion">Community</span>
-          </h1>
-          <a href="#" className="btn btn-primary bg-purple">
-            Get started
-          </a>
-        </div>
-      </div>
       <div className="footer-wrapper-end">
         <div className="hobbycue">
           <h2 className="about_us">About Us</h2>
@@ -58,38 +47,36 @@ function Footer() {
           </ul>
         </div>
         <div className="social_media">
-          <h2>Social media</h2>
+          <h2 className="about_us">Social media</h2>
 
           <div className="social-media-links">
-            <ul>
-              <li>
+              <div>
                 <img src={insta} />
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src={pintrest} />
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src={facebook} />
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src={telegram} />
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src={google} />
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src={twitter} />
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src={youtube} />
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src={email} />
-              </li>
-            </ul>
+              </div>
           </div>
           <div className="social-invite">
-            <h2>Invite friends</h2>
+            <h2 className="about_us">Invite friends</h2>
             <div className="input-wrapper">
               <input placeholder="Email ID" className="navbar-input" />
 
@@ -99,6 +86,9 @@ function Footer() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="footer-last">
+        <p className="footer-last-para">© Purple Cues Private Limited</p>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 .heading{
     display: flex;
     align-items: center;
+    column-gap: 20px;
 }
 .wrapper {
     max-width: 400px;
@@ -119,3 +120,10 @@ gap: 8px;
     background-color: #CED4DA;
     display: block;
   }
+
+@media screen and (max-width:1250px) {
+  .heading{
+    align-items: center;
+    justify-content: center;
+  }
+}
