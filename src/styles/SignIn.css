@@ -1,0 +1,121 @@
+.heading{
+    display: flex;
+    align-items: center;
+}
+.wrapper {
+    max-width: 400px;
+    height: 2.5rem;
+    border-radius:  8px;
+    padding: 0 10px;
+    box-shadow: 0px 0px 8px #ddd;
+    display: flex;
+    margin:4vh 0; 
+    border: 1px solid var(--Primary-Full, #8064A2);
+    background: var(--Purple-3, #F7F5F9);
+    
+  }
+  .heading-divider {
+    display: flex;
+    width: 50px; 
+    margin: 5px auto; 
+    border: none;
+    border-top: 5px solid #8064A2; 
+  }
+  /* .head-first{
+    padding: 14px 0;
+  } */
+.head-first h3{
+  color:#8064A2;
+}
+  .button {
+    height: 100%;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    background: var(--Purple-3, #F7F5F9);
+   
+  }
+  .button-continue{
+    border-radius: 8px;
+border: 1px solid var(--Base-Black, #000);
+display: flex;
+padding: 8px 172px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+  }
+  
+  .google-icon-wrapper {
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    color: white;
+  }
+  .facebook-icon-wrapper {
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+  }
+.signin-input{
+    border: none;
+   
+
+
+}
+  .write{
+    max-width: 400px;
+    height: 2.5rem;
+    border-radius:  8px;
+    padding: 0 12px;
+    margin: 4vh 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:  10px; 
+    border: 1px solid var(--Grey-Lighter, #EBEDF0);
+    background: var(--Grey-white, #FFF);
+    border: none;
+  }
+
+  .remember-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 4vh 0;
+  }
+  .forget-me{
+    display: flex;
+  }
+  .remember-me-label {
+    margin-left: 8px;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 12px;
+    align-items: center;
+    color: var(--Base-Black, var(--Black, #000));
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 16px; 
+    letter-spacing: 2px;
+    padding:1.5vh 0;
+  }
+  .title::before, .title::after{
+    content: "";
+    height: 1px;
+    background-color: #CED4DA;
+    display: block;
+  }
