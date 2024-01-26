@@ -1,6 +1,6 @@
 .hobbycard {
     overflow-x: hidden; /* or overflow-x: hidden; */
-    width: 100vw;
+    width: 98vw;
   }
 
 @media screen and (max-width:768px) {
