@@ -18,7 +18,7 @@ function NavbarBootStrap() {
   return (
     <Navbar expand="lg" className="bg-body-primary">
       <Container className="container">
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="#" className="navbar-logo">
           <img src={HobbyCueLogo} alt="img" />
         </Navbar.Brand>
         <div className="serch-icon">
