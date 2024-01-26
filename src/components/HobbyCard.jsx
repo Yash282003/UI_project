@@ -9,7 +9,7 @@ import people from "../images/people.png";
 
 function HobbyCard() {
   return (
-    <Row xs={1} md={2} className="g-4" style={{ padding: "10vh 8vw" }}>
+    <Row xs={1} md={2} className="g-4 hobbycard" style={{ padding: "10vh 8vw" }}>
       {Array.from({ length: 4 }).map((_, idx) => (
         <Col key={idx}>
           <Card>

@@ -1,7 +1,8 @@
-.g-4 {
+.hobbycard {
     overflow-x: hidden; /* or overflow-x: hidden; */
+    width: 100vw;
   }
-  
+
 @media screen and (max-width:768px) {
     .btn-no-bg{
         width: 100%;
