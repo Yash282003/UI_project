@@ -12,6 +12,7 @@ import Hobbies from "../images/Hobbies.png";
 import notification from "../images/notification.png";
 import shopping from "../images/shopping.png";
 import { IoSearch } from "react-icons/io5";
+import search  from "../images/search.png";
 import "../styles/Navbar.css";
 function NavbarBootStrap() {
   return (
@@ -20,10 +21,10 @@ function NavbarBootStrap() {
         <Navbar.Brand href="#">
           <img src={HobbyCueLogo} alt="img" />
         </Navbar.Brand>
-        <div className="">
-          <IoSearch />
+        <div className="serch-icon">
+        <img src={search} />
         </div>
-        <div className="">
+        <div className="notify-icon">
           <img src={notification} />
         </div>
 
@@ -42,13 +43,13 @@ function NavbarBootStrap() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <div className="link-wrapper">
+            <div className="links-wrapper">
               <img src={Explore} />
               <NavDropdown title="Explore" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Explore</NavDropdown.Item>
               </NavDropdown>
             </div>
-            <div className="link-wrapper">
+            <div className="links-wrapper">
               <img src={Hobbies} />
               <NavDropdown title="Hobbies" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Explore</NavDropdown.Item>
@@ -56,13 +57,13 @@ function NavbarBootStrap() {
                 <NavDropdown.Divider />
               </NavDropdown>
             </div>
-            <div className="link-wrapper">
+            <div className="links-wrapper">
               <img src={bookmark} />
             </div>
-            <div className="link-wrapper">
+            <div className="links-wrapper">
               <img src={notification} />
             </div>
-            <div className="link-wrapper">
+            <div className="links-wrapper">
               <img src={shopping} />
             </div>
             <Button variant="outline-success">Sign In</Button>

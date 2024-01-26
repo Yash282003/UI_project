@@ -1,4 +1,7 @@
-
+.g-4 {
+    overflow-x: hidden; /* or overflow-x: hidden; */
+  }
+  
 @media screen and (max-width:768px) {
     .btn-no-bg{
         width: 100%;
@@ -9,6 +12,7 @@
     .card-title{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .card-text{
         display: flex;

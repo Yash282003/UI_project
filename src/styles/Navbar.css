@@ -9,8 +9,8 @@
     display: flex;
     
   }
-  .container{
-  }
+  /* .container{
+  } */
   
   .navbar-input {
     border-radius: 0px 8px 8px 0px;
@@ -32,10 +32,21 @@
     color: white;
     background: var(--Primary-Full, #8064A2);
   }
-  .link-wrapper{
+  .links-wrapper{
     display: flex;
     align-items: center;
     padding: 0 15px 0 0;
   }
 
+  @media (min-width: 992px) {
+    .serch-icon,
+    .notify-icon {
+      display: none;
+    }
+  }
+  
+  /* @media (max-width: 1150px) {
+    .link-wrapper{
+padding: 0 0 0 0;    }
+  } */
   
